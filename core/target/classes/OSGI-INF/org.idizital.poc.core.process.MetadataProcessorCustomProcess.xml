@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.idizital.poc.core.process.MetadataProcessorCustomProcess">
+        <implementation class="org.idizital.poc.core.process.MetadataProcessorCustomProcess"/>
+        <service servicefactory="false">
+            <provide interface="com.adobe.granite.workflow.exec.WorkflowProcess"/>
+        </service>
+        <property name="service.description" value="Required field check workflow process"/>
+        <property name="service.vendor" value="Adobe Systems"/>
+        <property name="process.label" value="Required Field Check Process"/>
+        <property name="service.pid" value="org.idizital.poc.core.process.MetadataProcessorCustomProcess"/>
+        <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResourceResolverFactory" unbind="unbindResourceResolverFactory"/>
+    </scr:component>
+</components>

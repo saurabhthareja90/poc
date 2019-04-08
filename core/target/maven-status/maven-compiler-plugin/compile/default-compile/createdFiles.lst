@@ -1,0 +1,14 @@
+org/idizital/poc/core/process/MetadataProcessorCustomProcess.class
+org/idizital/poc/core/process/InitialisationConstants.class
+org/idizital/poc/core/models/HelloWorldModel.class
+org/idizital/poc/core/AbstractFormService.class
+org/idizital/poc/core/servlets/SimpleServlet.class
+org/idizital/poc/core/util/FrameworkUtil.class
+org/idizital/poc/core/listeners/SimpleResourceListener.class
+org/idizital/poc/core/PopulateDropDownServiceImpl.class
+org/idizital/poc/core/PopulateDropDownService.class
+org/idizital/poc/core/filters/LoggingFilter.class
+org/idizital/poc/core/exception/ApplicationException.class
+org/idizital/poc/core/process/AbstractProcess.class
+org/idizital/poc/core/process/WorkflowConstants.class
+org/idizital/poc/core/servlets/SchemaDropDownServlet.class

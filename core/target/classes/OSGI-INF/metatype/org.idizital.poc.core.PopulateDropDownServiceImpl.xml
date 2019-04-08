@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.idizital.poc.core.PopulateDropDownServiceImpl">
+    <OCD id="org.idizital.poc.core.PopulateDropDownServiceImpl" name="%org.idizital.poc.core.PopulateDropDownServiceImpl.name" description="%org.idizital.poc.core.PopulateDropDownServiceImpl.description">
+        <AD id="datasource" type="String" default="FormsPortal" name="%org.idizital.poc.core.PopulateDropDownServiceImpl.datasource.name" description="%org.idizital.poc.core.PopulateDropDownServiceImpl.datasource.description"/>
+    </OCD>
+    <Designate pid="org.idizital.poc.core.PopulateDropDownServiceImpl">
+        <Object ocdref="org.idizital.poc.core.PopulateDropDownServiceImpl"/>
+    </Designate>
+</metatype:MetaData>

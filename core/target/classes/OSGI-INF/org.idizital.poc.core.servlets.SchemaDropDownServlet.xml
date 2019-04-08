@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.idizital.poc.core.servlets.SchemaDropDownServlet">
+        <implementation class="org.idizital.poc.core.servlets.SchemaDropDownServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths">
+            /bin/generic/schemadropdown
+        </property>
+        <property name="sling.servlet.methods">
+            GET
+        </property>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.idizital.poc.core.servlets.SchemaDropDownServlet"/>
+        <reference name="slingRepository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindSlingRepository" unbind="unbindSlingRepository"/>
+        <reference name="repository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepository" unbind="unbindRepository"/>
+        <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResourceResolverFactory" unbind="unbindResourceResolverFactory"/>
+        <reference name="populateDropDownService" interface="org.idizital.poc.core.PopulateDropDownService" cardinality="1..1" policy="static" bind="bindPopulateDropDownService" unbind="unbindPopulateDropDownService"/>
+    </scr:component>
+</components>

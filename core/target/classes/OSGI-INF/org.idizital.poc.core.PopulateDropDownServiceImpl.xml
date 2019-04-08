@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="org.idizital.poc.core.PopulateDropDownServiceImpl">
+        <implementation class="org.idizital.poc.core.PopulateDropDownServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="org.idizital.poc.core.PopulateDropDownService"/>
+        </service>
+        <property name="datasource" value="FormsPortal"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="org.idizital.poc.core.PopulateDropDownServiceImpl"/>
+        <reference name="resourceResolverHelper" interface="com.adobe.granite.resourceresolverhelper.ResourceResolverHelper" cardinality="1..1" policy="static" bind="bindResourceResolverHelper" unbind="unbindResourceResolverHelper"/>
+    </scr:component>
+</components>
